@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevMagic</title>
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="../src/styles/css/index.css" />
+    <link rel="stylesheet" href="../src/styles/css/main.css" />
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MATERIAL ICON -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <img src="../src/assets/logo.png" alt="logomarca" />
+    </header>
+    <main id="main">
+      <h1>Encurte seus links.</h1>
+      <p>
+        Links são longos. Encurte os links que você deseja compartilhar,<br />
+        e acompanhe enquanto viajam através da internet.
+      </p>
+      <div class="link-bar">
+        <label>
+          <input class="link" type="text" placeholder="Cole o seu link aqui" />
+          <i id="icon" class="material-icons">close</i>
+        </label>
+        <button class="generate-link" onclick="handleClick()">Encurtar</button>
+      </div>
+    </main>
+    <section id="top-links">
+      <h1>TOP 5</h1>
+      <ul class="listing"></ul>
+    </section>
+    <section id="hits">
+      <h1>HITS</h1>
+      <span>30.523.214</span>
+      <p>Cliques em links</p>
+    </section>
+    <footer id="footer">
+      <p>chr.dc</p>
+      <div class="social-media">
+        <a
+          href="https://www.linkedin.com/in/matheus-f-4a5732b4/"
+          target="_blank"
+        >
+          <img src="../src/assets/icon-twitter.png" alt="twitter" />
+        </a>
+        <a href="https://github.com/SaMatheus" target="_blank">
+          <img src="../src/assets/icon-facebook.png" alt="facebook" />
+        </a>
+      </div>
+    </footer>
+    <!-- SCRIPT -->
+    <script src="../src/script/top_five.js"></script>
+    <script src="../src/script/link_shortener.js"></script>
+  </body>
+</html>
